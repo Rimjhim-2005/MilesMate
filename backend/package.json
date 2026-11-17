@@ -1,0 +1,28 @@
+{
+  "name": "milesmate-backend",
+  "version": "1.0.0",
+  "description": "MilesMate backend - Express + Socket.io + PostgreSQL/PostGIS + Redis",
+  "main": "src/server.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "import:forum-data": "node src/scripts/importForumData.js",
+    "smoke": "node scripts/smoke-test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.12.0",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "socket.io-client": "^4.7.5"
+  }
+}

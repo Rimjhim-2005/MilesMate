@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Secrets - NEVER commit these (commit .env.example instead)
+.env
+*.env.local
+
+# Logs and OS junk
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+
+# Python (for ml-service later)
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Large data files - share outside git
+backend/data/*.csv
